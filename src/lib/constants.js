@@ -121,19 +121,19 @@ export const mixtapes = [
 
 export const projects = [
   {
-    title: 'Notebook',
-    description: 'My personal notebook.',
-    url: 'https://github.com/suyalcinkaya/notebook'
+    title: 'twitchbot',
+    description: 'Chat moderator bot for twitch streaming platform.',
+    url: 'https://github.com/dogukanburda/twitchbot'
   },
   {
-    title: 'Notiful',
-    description: 'An open source minimal and clean taking notes extension for Chrome.',
-    url: 'https://github.com/suyalcinkaya/notiful'
+    title: 'usb-port-listener',
+    description: 'A linux system service that listens to all USB activities.',
+    url: 'https://github.com/dogukanburda/usb-port-listener'
   },
   {
-    title: 'Koalazily',
-    description: 'Loading images lazily in a modern way using Intersection Observer API.',
-    url: 'https://github.com/suyalcinkaya/koalazily'
+    title: 'Pure',
+    description: 'A dashboard for the project Program for Undergraduate Research at Sabanci University.',
+    url: 'https://github.com/dogukanburda/Developing-interfaces-for-social-network-experiments'
   }
 ]
 
