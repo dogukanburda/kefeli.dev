@@ -8,15 +8,16 @@ import PageSeo from 'components/PageSeo'
 
 // --- Others
 import { getAllLogbook, getPageSeo } from 'lib/contentful'
+import { journeyData } from 'lib/constants'
 
-const Journey = ({ allLogbook, pageSeo: { title, ...rest } }) => {
+const Journey = ({ journeyData: journeyData , pageSeo: { title, ...rest } }) => {
   return (
     <>
       <PageSeo title={title} {...rest} />
       <PageTitle title={title || 'Journey'} />
       <Suspense fallback={null}>
         <div className="flex flex-col gap-y-12 items-stretch">
-          {allLogbook.map((item, itemIndex) => (
+          {journeyData.map((item, itemIndex) => (
             <div key={`data_${itemIndex}`} className="flex flex-col gap-y-6">
               <div className="flex items-center">
                 <h2>{item.year}</h2>
@@ -69,7 +70,7 @@ export async function getStaticProps({ preview = false }) {
   })
 
   return {
-    props: { allLogbook: mappedLogbook, pageSeo, headerTitle: pageSeo?.title || 'Journey' }
+    props: { journeyData: journeyData, pageSeo, headerTitle: pageSeo?.title || 'Journey' }
   }
 }
 

@@ -1,9 +1,9 @@
 import { profiles } from 'lib/constants'
 import { ogImageUrl } from 'lib/helper'
 
-const title = 'Onur Şuyalçınkaya'
-const description = 'Software Engineer, JavaScript enthusiast, DJ, and writer.'
-const url = 'https://onur.dev'
+const title = 'Dogukan Kefeli'
+const description = 'Computer Vision Engineer.'
+const url = 'https://kefeli.dev'
 const twitterUsername = `@${profiles.twitter.username}`
 
 const SEO = {

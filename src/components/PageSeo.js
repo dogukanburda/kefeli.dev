@@ -8,9 +8,9 @@ const PageSeo = ({ title, url, seoTitle, seoDescription }) => {
     <NextSeo
       title={seoTitle}
       description={seoDescription}
-      canonical={`https://onur.dev/${url}`}
+      canonical={`https://kefeli.dev/${url}`}
       openGraph={{
-        url: `https://onur.dev/${url}`,
+        url: `https://kefeli.dev/${url}`,
         title: seoTitle,
         description: seoDescription,
         images: [

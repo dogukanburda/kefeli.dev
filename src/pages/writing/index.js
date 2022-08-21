@@ -8,7 +8,7 @@ import RichText from 'components/RichText'
 
 // --- Others
 import { getAllPosts, getPage } from 'lib/contentful'
-import { dateTemplate } from 'lib/constants'
+import { dateTemplate, posts } from 'lib/constants'
 
 export default function Writing({ allPosts, page: { title, content, ...rest } }) {
   return (
@@ -18,27 +18,9 @@ export default function Writing({ allPosts, page: { title, content, ...rest } })
       <Suspense fallback={null}>
         <RichText content={content} />
         <div className="flex flex-col gap-y-6">
-          {allPosts.map((post) => {
-            const {
-              title,
-              // description,
-              date,
-              slug,
-              sys: { firstPublishedAt }
-            } = post
-
-            return (
-              <Card
-                key={`post_${slug}`}
-                title={title}
-                subtitle={
-                  <time dateTime={date || firstPublishedAt}>
-                    {dateTemplate.render(new Date(date || firstPublishedAt))}
-                  </time>
-                }
-                url={`/writing/${slug}`}
-              />
-            )
+        {posts.map((post) => {
+            const { title, date, url } = post
+            return <Card key={`post_${title}`} title={title} subtitle={<time dateTime={date}>{dateTemplate.render(new Date(date))}</time>} url={url} />
           })}
         </div>
       </Suspense>

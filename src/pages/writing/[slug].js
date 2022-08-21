@@ -1,65 +1,36 @@
-import { memo, Suspense } from 'react'
+import fs from 'fs';
+import matter from 'gray-matter';
+import md from 'markdown-it';
 
-// --- Components
-import WritingSeo from 'components/WritingSeo'
-import RichText from 'components/RichText'
+export async function getStaticPaths() {
+  const files = fs.readdirSync('src/posts');
+  const paths = files.map((fileName) => ({
+    params: {
+      slug: fileName.replace('.md', ''),
+    },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+}
 
-// --- Others
-import { getPost, getAllPosts } from 'lib/contentful'
-import { dateTemplate } from 'lib/constants'
-
-const Post = memo(({ post }) => {
-  const {
-    title,
-    description,
-    date,
-    slug,
-    content,
-    sys: { firstPublishedAt, publishedAt: updatedAt }
-  } = post
-
-  return (
-    <>
-      <WritingSeo
-        title={title}
-        description={description}
-        publishedAt={date || firstPublishedAt}
-        updatedAt={updatedAt}
-        url={`https://onur.dev/writing/${slug}`}
-      />
-      <article>
-        <div className="flex flex-col gap-y-3 mb-6">
-          <h1>{title}</h1>
-          <time dateTime={date || firstPublishedAt} className="block font-light text-gray-500">
-            {dateTemplate.render(new Date(date || firstPublishedAt))}
-          </time>
-        </div>
-        <Suspense fallback={null}>
-          <RichText content={content} />
-        </Suspense>
-      </article>
-    </>
-  )
-})
-
-export async function getStaticProps({ params, preview = false }) {
-  const data = await getPost(params.slug, preview)
-
+export async function getStaticProps({ params: { slug } }) {
+  const fileName = fs.readFileSync(`src/posts/${slug}.md`, 'utf-8');
+  const { data: frontmatter, content } = matter(fileName);
   return {
     props: {
-      post: data?.post ?? null,
-      headerTitle: data?.post?.title ?? ''
-    }
-  }
+      frontmatter,
+      content,
+    },
+  };
 }
 
-export async function getStaticPaths({ preview = false }) {
-  const allPosts = await getAllPosts(preview)
-
-  return {
-    paths: allPosts?.map(({ slug }) => `/writing/${slug}`) ?? [],
-    fallback: false
-  }
+export default function PostPage({ frontmatter, content }) {
+  return (
+    <div className='prose mx-auto'>
+      <h1>{frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    </div>
+  );
 }
-
-export default Post

@@ -1,5 +1,5 @@
 export const ogImageUrl = (title) =>
-  `https://og-image-onur.vercel.app/${encodeURIComponent(title)}.png?md=0&fontSize=125px`
+  `https://kefeli.dev`
 
 export const isExternalLink = (href) => {
   if (!href) return false

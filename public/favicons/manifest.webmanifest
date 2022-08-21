@@ -1,7 +1,7 @@
 {
-  "name": "Onur Şuyalçınkaya",
-  "short_name": "Onur Şuyalçınkaya",
-  "description": "Software Engineer, JavaScript enthusiast, DJ, and writer.",
+  "name": "Dogukan Kefeli",
+  "short_name": "Dogukan Kefeli",
+  "description": "Computer Vision Engineer.",
   "icons": [
     { "src": "/favicons/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/favicons/icon-512.png", "sizes": "512x512", "type": "image/png" }

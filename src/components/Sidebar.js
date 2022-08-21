@@ -51,7 +51,7 @@ const Sidebar = ({ router }) => {
                 ></path>
               </svg>
             </GhostButton>
-            <span className="font-bold">Onur Şuyalçınkaya</span>
+            <span className="font-bold">Dogukan Kefeli</span>
           </div>
           <div className="flex flex-col gap-y-6 px-2">
             <div className="flex flex-col gap-y-1.5">

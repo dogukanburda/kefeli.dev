@@ -1,9 +1,9 @@
 {
-  "name": "onur.dev",
+  "name": "kefeli.dev",
   "description": "My personal website.",
   "author": {
-    "name": "Onur Şuyalçınkaya",
-    "url": "https://onur.dev"
+    "name": "Dogukan Kefeli",
+    "url": "https://kefeli.dev"
   },
   "license": "MIT",
   "scripts": {
@@ -19,6 +19,8 @@
     "@contentful/rich-text-react-renderer": "^15.12.1",
     "@supabase/supabase-js": "^1.35.6",
     "@tailwindcss/line-clamp": "^0.4.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^12.3.2",
     "cssnano": "^5.1.11",
     "framer-motion": "^7.0.0",
     "markdown-to-jsx": "^7.1.5",

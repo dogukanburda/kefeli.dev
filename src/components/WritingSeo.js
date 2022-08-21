@@ -13,7 +13,7 @@ const WritingSeo = ({ title, description, publishedAt, updatedAt, url }) => {
   return (
     <>
       <NextSeo
-        title={`${title} — Onur Şuyalçınkaya`}
+        title={`${title} — Dogukan Kefeli`}
         description={description}
         canonical={url}
         openGraph={{
@@ -22,7 +22,7 @@ const WritingSeo = ({ title, description, publishedAt, updatedAt, url }) => {
             publishedTime: publishedDate
           },
           url,
-          title: `${title} — Onur Şuyalçınkaya`,
+          title: `${title} — Dogukan Kefeli`,
           description: description,
           images: [featuredImage]
         }}
@@ -35,9 +35,9 @@ const WritingSeo = ({ title, description, publishedAt, updatedAt, url }) => {
         {...(updatedAt && {
           dateModified: new Date(updatedAt).toISOString()
         })}
-        authorName="Onur Şuyalçınkaya"
+        authorName="Dogukan Kefeli"
         description={description}
-        publisherName="Onur Şuyalçınkaya"
+        publisherName="Dogukan Kefeli"
         publisherLogo="/images/me.png"
       />
     </>

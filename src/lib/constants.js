@@ -5,7 +5,7 @@ export const dateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
 export const profiles = {
   github: {
     title: 'GitHub',
-    url: 'https://github.com/suyalcinkaya/',
+    url: 'https://github.com/dogukanburda/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
         <path fill="none" d="M0 0h24v24H0z" />
@@ -15,8 +15,8 @@ export const profiles = {
   },
   twitter: {
     title: 'Twitter',
-    username: 'onurschu',
-    url: 'https://twitter.com/onurschu',
+    username: 'dogukanburda',
+    url: 'https://twitter.com/dogukanburda',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
         <path fill="none" d="M0 0h24v24H0z" />
@@ -26,7 +26,7 @@ export const profiles = {
   },
   linkedin: {
     title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/suyalcinkaya/',
+    url: 'https://www.linkedin.com/in/dogukankefeli/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
         <path fill="none" d="M0 0h24v24H0z" />
@@ -34,39 +34,9 @@ export const profiles = {
       </svg>
     )
   },
-  medium: {
-    title: 'Medium',
-    url: 'https://suyalcinkaya.medium.com',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-        <path fill="none" d="M0 0h24v24H0z" />
-        <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.3 12.94c-.1-.05-.15-.2-.15-.301V8.006c0-.1.05-.25.15-.351l.955-1.105V6.5H14.84l-2.56 6.478L9.366 6.5H5.852v.05l.903 1.256c.201.2.251.502.251.753v5.523c.05.302 0 .653-.15.954L5.5 16.894v.05h3.616v-.05L7.76 15.087c-.15-.302-.201-.603-.15-.954V9.11c.05.1.1.1.15.301l3.414 7.633h.05L14.54 8.76c-.05.3-.05.652-.05.904v5.925c0 .15-.05.25-.15.351l-1.005.954v.05h4.921v-.05l-.954-.954z" />
-      </svg>
-    )
-  },
-  instagram: {
-    title: 'Instagram',
-    url: 'https://www.instagram.com/jgrmn/',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-        <path fill="none" d="M0 0h24v24H0z" />
-        <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
-      </svg>
-    )
-  },
-  soundcloud: {
-    title: 'Soundcloud',
-    url: 'https://soundcloud.com/jagerman',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-        <path fill="none" d="M0 0h24v24H0z" />
-        <path d="M10.464 8.596c.265 0 .48 2.106.48 4.704l-.001.351c-.019 2.434-.226 4.353-.479 4.353-.256 0-.465-1.965-.48-4.44v-.352c.005-2.558.218-4.616.48-4.616zm-1.664.96c.259 0 .47 1.8.48 4.054v.34c-.01 2.254-.221 4.054-.48 4.054-.255 0-.464-1.755-.48-3.97v-.34l.002-.34c.025-2.133.23-3.798.478-3.798zm-1.664 0c.255 0 .464 1.755.48 3.97v.34l-.002.34c-.025 2.133-.23 3.798-.478 3.798-.259 0-.47-1.8-.48-4.054v-.34c.01-2.254.221-4.054.48-4.054zm-1.664.576c.265 0 .48 1.762.48 3.936l-.002.335c-.02 2.017-.227 3.601-.478 3.601-.262 0-.474-1.717-.48-3.852v-.168c.006-2.135.218-3.852.48-3.852zM3.808 11.86c.265 0 .48 1.375.48 3.072v.158c-.013 1.623-.223 2.914-.48 2.914-.265 0-.48-1.375-.48-3.072v-.158c.013-1.623.223-2.914.48-2.914zm10.784-4.8c2.58 0 4.72 1.886 5.118 4.354a3.36 3.36 0 1 1 .993 6.589l-.063.001h-8.16a.768.768 0 0 1-.768-.768V7.933a5.16 5.16 0 0 1 2.88-.873zM2.144 11.668c.265 0 .48 1.332.48 2.976v.156c-.014 1.57-.223 2.82-.48 2.82-.26 0-.473-1.29-.48-2.898v-.078c0-1.644.215-2.976.48-2.976zm-1.664.96c.265 0 .48.946.48 2.112v.131c-.016 1.105-.225 1.981-.48 1.981-.265 0-.48-.946-.48-2.112v-.131c.016-1.105.225-1.981.48-1.981z" />
-      </svg>
-    )
-  },
-  youtube: {
-    title: 'YouTube',
-    url: 'https://www.youtube.com/c/jagermanmusic',
+  cv: {
+    title: 'CV',
+    url: 'https://read.cv/dogukankefeli',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
         <path fill="none" d="M0 0h24v24H0z" />
@@ -164,5 +134,96 @@ export const projects = [
     title: 'Koalazily',
     description: 'Loading images lazily in a modern way using Intersection Observer API.',
     url: 'https://github.com/suyalcinkaya/koalazily'
+  }
+]
+
+export const posts = [
+  {
+    title: 'Data Structures',
+    date: 'August 20, 2022',
+    url: '/writing/data_structures'
+  },
+  {
+    title: 'Bira Kültürü ve Tarihi',
+    date: 'August 11, 2021',
+    url: '/writing/bira_kulturu_ve_tarihi'
+  },
+  {
+    title: 'Post 3',
+    date: 'August 20, 2022',
+    url: '/writing/post3'
+  }
+]
+
+export const journeyData = [
+  {
+    year: 2022,
+    logs: [
+      {
+        title: 'Started to lead my first project as an engineer',
+        description: 'Delivering an end-to-end ai-based computer vision solution to a production facility.',
+        emoji: '🏗️'
+      },
+      {
+        title: 'Graduated from ITU',
+        description: "That one class Quantum Mechanix II really had me for 3 semesters.",
+        emoji: '🎓'
+      }
+    ]
+  },
+  {
+    year: 2021,
+    logs: [
+      {
+        title: 'Joined Stroma',
+        description: "First professional full-time job.",
+        emoji: '🦾'
+      },
+      {
+        title: 'Finished my first internship at Sabanci University',
+        description: "Working with Professor Onur Varol and other interns really elevated my vision.",
+        emoji: '📊'
+      }
+    ]
+  },
+  {
+    year: 2019,
+    logs: [
+      {
+        title: 'Started practicing yoga',
+        description: "Doing yoga helped me to concentrate more and it improved my body awareness.",
+        emoji: '🧘🏻‍♂️'
+      }
+    ]
+  },
+  {
+    year: 2018,
+    logs: [
+      {
+        title: 'Started playing football',
+        description: "Started as a rookie Defensive End at ITU Hornets",
+        emoji: '🏈'
+      }
+    ]
+  },
+  {
+    year: 2017,
+    logs: [
+      {
+        title: 'Started at Istanbul Technical University',
+        description: 'Studying physics strongly impacted my frame of mind on a positive aspect.',
+        emoji: '📚'
+      }
+    ]
+  },
+  {
+    year: 1999,
+    logs: [
+      {
+        title: 'Born',
+        description: 'On 28th of February.',
+        emoji: '👶🏼'
+      }
+    ]
   }
 ]
