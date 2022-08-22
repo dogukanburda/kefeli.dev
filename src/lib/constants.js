@@ -139,19 +139,19 @@ export const projects = [
 
 export const posts = [
   {
+    title: 'Machine Learning Algorithms with Numpy',
+    date: 'August 22, 2022',
+    url: '/writing/machine-learning'
+  },
+  {
     title: 'Data Structures',
     date: 'August 20, 2022',
-    url: '/writing/data_structures'
+    url: '/writing/data-structures'
   },
   {
     title: 'Bira Kültürü ve Tarihi',
     date: 'August 11, 2021',
-    url: '/writing/bira_kulturu_ve_tarihi'
-  },
-  {
-    title: 'Post 3',
-    date: 'August 20, 2022',
-    url: '/writing/post3'
+    url: '/writing/bira-kulturu-ve-tarihi'
   }
 ]
 
