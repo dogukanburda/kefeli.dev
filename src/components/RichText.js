@@ -70,7 +70,6 @@ function options(links) {
       [INLINES.HYPERLINK]: (node, children) => <Link href={node.data.uri}>{children}</Link>,
       [INLINES.EMBEDDED_ENTRY]: (node) => {
         const entry = findInlineEntry(node.data.target.sys.id)
-        const LazyLoad = dynamic(() => import('react-lazyload'))
         const CodeBlock = dynamic(() => import('components/CodeBlock'))
 
         switch (entry.__typename) {
@@ -80,7 +79,6 @@ function options(links) {
             switch (type) {
               case 'Video': {
                 return (
-                  <LazyLoad once>
                     <figure>
                       <iframe
                         src={embedUrl}
@@ -92,12 +90,10 @@ function options(links) {
                       />
                       <figcaption className="text-sm text-gray-500 text-center mt-2">{title}</figcaption>
                     </figure>
-                  </LazyLoad>
                 )
               }
               case 'SoundCloud': {
                 return (
-                  <LazyLoad once>
                     <figure>
                       <iframe
                         src={embedUrl}
@@ -109,7 +105,6 @@ function options(links) {
                       />
                       <figcaption className="text-sm text-gray-500 text-center mt-2">{title}</figcaption>
                     </figure>
-                  </LazyLoad>
                 )
               }
               default:
@@ -118,9 +113,7 @@ function options(links) {
           }
           case 'CodeBlock': {
             return (
-              <LazyLoad once offset={50}>
                 <CodeBlock {...entry} />
-              </LazyLoad>
             )
           }
           default:
