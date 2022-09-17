@@ -5,6 +5,7 @@ import Card from 'components/Card'
 import SectionBlock from 'components/SectionBlock'
 import Link from 'components/Link'
 import PageTitle from 'components/PageTitle'
+import Footer from 'components/Footer';
 
 // --- Others
 import { getLast3Posts } from 'lib/contentful'
@@ -51,6 +52,7 @@ export default function Home({ }) {
           })}
         </SectionBlock>
       </div>
+        <Footer />
     </Suspense>
   )
 }

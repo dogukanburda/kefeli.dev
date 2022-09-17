@@ -5,7 +5,7 @@ import Card from 'components/Card'
 import Markdown from 'components/Markdown'
 import PageTitle from 'components/PageTitle'
 import PageSeo from 'components/PageSeo'
-
+import Footer from 'components/Footer'
 // --- Others
 import { getAllLogbook, getPageSeo } from 'lib/contentful'
 import { journeyData } from 'lib/constants'
@@ -45,6 +45,7 @@ const Journey = ({ journeyData: journeyData , pageSeo: { title, ...rest } }) => 
             </div>
           ))}
         </div>
+        <Footer />
       </Suspense>
     </>
   )

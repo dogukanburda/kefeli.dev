@@ -5,7 +5,7 @@ import PageTitle from 'components/PageTitle'
 import Card from 'components/Card'
 import PageSeo from 'components/PageSeo'
 import RichText from 'components/RichText'
-
+import Footer from 'components/Footer'
 // --- Others
 import { getAllPosts, getPage } from 'lib/contentful'
 import { dateTemplate, posts } from 'lib/constants'
@@ -23,6 +23,7 @@ export default function Writing({ allPosts, page: { title, content, ...rest } })
             return <Card key={`post_${title}`} title={title} subtitle={<time dateTime={date}>{dateTemplate.render(new Date(date))}</time>} url={url} />
           })}
         </div>
+        <Footer />
       </Suspense>
     </>
   )
